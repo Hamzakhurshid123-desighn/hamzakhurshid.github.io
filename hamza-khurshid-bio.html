@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hamza Khurshid — CS Student, Data Analyst &amp; Pashto Poet</title>
+<meta name="description" content="Hamza Khurshid is a Computer Science student from Swat, Barikot, Pakistan, with experience in data analysis and e-commerce, and a Pashto poet and writer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Noto+Nastaliq+Urdu:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --night: #16231F;
+    --night-deep: #0F1917;
+    --sand: #EFE6D2;
+    --sand-dim: #C9BFA4;
+    --gold: #C79A3C;
+    --gold-bright: #E0B75A;
+    --line: rgba(239,230,210,0.16);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--night);
+    color:var(--sand);
+    font-family:'Inter', sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{
+    font-family:'Zilla Slab', serif;
+    font-weight:600;
+    margin:0;
+    color:var(--sand);
+  }
+  .wrap{
+    max-width:760px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+  a{color:var(--gold-bright);}
+
+  /* Hero */
+  .hero{
+    position:relative;
+    padding:110px 0 90px;
+    overflow:hidden;
+    background:
+      radial-gradient(ellipse at 50% -10%, rgba(199,154,60,0.18), transparent 55%),
+      var(--night-deep);
+  }
+  .ridges{
+    position:absolute;
+    left:0; right:0; bottom:0;
+    width:100%;
+    display:block;
+  }
+  .eyebrow{
+    font-size:14px;
+    letter-spacing:0.02em;
+    color:var(--gold-bright);
+    margin-bottom:18px;
+  }
+  .hero h1{
+    font-size:clamp(38px, 6vw, 58px);
+    line-height:1.08;
+    max-width:11ch;
+  }
+  .hero .role{
+    margin-top:20px;
+    font-size:19px;
+    color:var(--sand-dim);
+    max-width:46ch;
+  }
+  .hero .place{
+    margin-top:10px;
+    font-size:15px;
+    color:var(--sand-dim);
+  }
+
+  /* Sections */
+  section{
+    padding:64px 0;
+    border-top:1px solid var(--line);
+  }
+  .kicker{
+    font-size:13px;
+    color:var(--gold-bright);
+    margin-bottom:10px;
+  }
+  section h2{
+    font-size:28px;
+    margin-bottom:22px;
+  }
+  section p{
+    max-width:64ch;
+    color:var(--sand-dim);
+    font-size:16.5px;
+  }
+  section p + p{margin-top:14px;}
+
+  .tag-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:26px;
+  }
+  .tag{
+    border:1px solid var(--line);
+    padding:8px 14px;
+    border-radius:3px;
+    font-size:14px;
+    color:var(--sand);
+  }
+
+  /* Poetry section */
+  .poetry{
+    background:var(--night-deep);
+  }
+  blockquote{
+    margin:30px 0;
+    padding:0 0 0 22px;
+    border-left:2px solid var(--gold);
+  }
+  .verse-ps{
+    font-family:'Noto Nastaliq Urdu', serif;
+    direction:rtl;
+    font-size:22px;
+    line-height:2.1;
+    color:var(--sand);
+  }
+  .verse-note{
+    margin-top:10px;
+    font-size:14px;
+    color:var(--sand-dim);
+    font-style:italic;
+  }
+
+  /* Links */
+  .links{
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+    margin-top:8px;
+  }
+  .link-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:18px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .link-row:first-child{border-top:1px solid var(--line);}
+  .link-name{
+    font-family:'Zilla Slab', serif;
+    font-size:19px;
+  }
+  .link-row a{
+    font-size:14px;
+    text-decoration:none;
+    color:var(--gold-bright);
+  }
+  .link-row a:hover{text-decoration:underline;}
+
+  footer{
+    padding:40px 0 60px;
+    font-size:13px;
+    color:var(--sand-dim);
+    border-top:1px solid var(--line);
+  }
+
+  @media (max-width:600px){
+    .hero{padding:80px 0 60px;}
+    section{padding:48px 0;}
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Swat · Barikot · Pakistan</div>
+    <h1>Hamza Khurshid</h1>
+    <div class="role">Computer Science student working in data analysis and e-commerce — and a Pashto poet writing about life, longing, and home.</div>
+  </div>
+  <svg class="ridges" viewBox="0 0 1440 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="0,140 0,90 180,40 340,80 520,20 700,70 900,30 1080,85 1260,45 1440,90 1440,140" fill="#16231F" opacity="0.9"/>
+    <polygon points="0,140 0,110 220,70 420,105 640,60 860,100 1080,65 1260,105 1440,80 1440,140" fill="#1D2E28"/>
+  </svg>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">Education &amp; Expertise</div>
+    <h2>Studying computer science, working with data.</h2>
+    <p>Hamza is currently pursuing a BS in Computer Science. His practical experience spans data analysis and e-commerce, built through freelance work with Microsoft Excel, digital content, and general computer skills.</p>
+    <div class="tag-row">
+      <span class="tag">Data Analysis</span>
+      <span class="tag">E-commerce</span>
+      <span class="tag">Microsoft Excel</span>
+      <span class="tag">Digital Content</span>
+    </div>
+  </div>
+</section>
+
+<section class="poetry">
+  <div class="wrap">
+    <div class="kicker">Pashto Poetry &amp; Writing</div>
+    <h2>Writing in Pashto, close to home.</h2>
+    <p>Alongside his technical work, Hamza writes and shares Pashto poetry and literary thoughts. His writing turns to life, emotion, nature, culture, and dreams — carrying his connection to the Pashto language and Pashtoon culture.</p>
+    <blockquote>
+      <div class="verse-ps">[ یو بیت دلته کیږدئ ]</div>
+      <div class="verse-note">Add one of your own verses here — Pashto script on top, English meaning below.</div>
+    </blockquote>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">Find Him Online</div>
+    <h2>Social profiles</h2>
+    <div class="links">
+      <div class="link-row">
+        <span class="link-name">Instagram</span>
+        <a href="https://instagram.com/hamzakhurshid" target="_blank" rel="noopener">@hamzakhurshid ↗</a>
+      </div>
+      <div class="link-row">
+        <span class="link-name">TikTok</span>
+        <a href="https://tiktok.com/@hamzakhurshid" target="_blank" rel="noopener">@hamzakhurshid ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Hamza Khurshid — Swat, Barikot, Pakistan</div>
+</footer>
+
+</body>
+</html>
