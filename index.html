@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hamza Khurshid — CS Student, Data Analyst &amp; Pashto Poet</title>
-  <link rel="icon" type="image/jpeg" href="Snapchat-923338820.jpg">
-  <meta property="og:site_name" content="Hamza Khurshid">
+<link rel="icon" type="image/jpeg" href="Snapchat-923338820.jpg">
+<meta property="og:site_name" content="Hamza Khurshid">
 <meta name="description" content="Hamza Khurshid is a Computer Science student from Swat, Barikot, Pakistan, with experience in data analysis and e-commerce, and a Pashto poet and writer.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,7 +46,7 @@
   /* Hero */
   .hero{
     position:relative;
-    padding:110px 0 90px;
+    padding:90px 0 90px;
     overflow:hidden;
     background:
       radial-gradient(ellipse at 50% -10%, rgba(199,154,60,0.18), transparent 55%),
@@ -173,12 +173,24 @@
   }
 
   @media (max-width:600px){
-    .hero{padding:80px 0 60px;}
+    .hero{padding:70px 0 60px;}
     section{padding:48px 0;}
+    nav{padding:14px 20px !important;}
+    nav div{gap:14px !important;}
+    nav a{font-size:13px !important;}
   }
 </style>
 </head>
 <body>
+
+<nav style="position:sticky;top:0;z-index:10;background:rgba(15,25,23,0.95);backdrop-filter:blur(6px);padding:16px 28px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(239,230,210,0.16);">
+  <span style="font-family:'Zilla Slab',serif;color:#EFE6D2;font-size:17px;">Hamza Khurshid</span>
+  <div style="display:flex;gap:20px;">
+    <a href="#education" style="color:#C9BFA4;text-decoration:none;font-size:14px;">Education</a>
+    <a href="#poetry" style="color:#C9BFA4;text-decoration:none;font-size:14px;">Poetry</a>
+    <a href="#social" style="color:#C9BFA4;text-decoration:none;font-size:14px;">Social</a>
+  </div>
+</nav>
 
 <div class="hero">
   <div class="wrap">
@@ -193,12 +205,13 @@
   </svg>
 </div>
 
-<section>
+<section id="education">
   <div class="wrap">
     <div class="kicker">Education &amp; Expertise</div>
     <h2>Studying computer science, working with data.</h2>
     <p>Hamza is currently pursuing a BS in Computer Science. His practical experience spans data analysis and e-commerce, built through freelance work with Microsoft Excel, digital content, and general computer skills.</p>
     <div class="tag-row">
+      <span class="tag">BS Computer Science</span>
       <span class="tag">Data Analysis</span>
       <span class="tag">E-commerce</span>
       <span class="tag">Microsoft Excel</span>
@@ -207,30 +220,30 @@
   </div>
 </section>
 
-<section class="poetry">
+<section class="poetry" id="poetry">
   <div class="wrap">
     <div class="kicker">Pashto Poetry &amp; Writing</div>
     <h2>Writing in Pashto, close to home.</h2>
     <p>Alongside his technical work, Hamza writes and shares Pashto poetry and literary thoughts. His writing turns to life, emotion, nature, culture, and dreams — carrying his connection to the Pashto language and Pashtoon culture.</p>
     <blockquote>
-      <div class="verse-ps">[ یو بیت دلته کیږدئ ]</div>
-      <div class="verse-note">Add one of your own verses here — Pashto script on top, English meaning below.</div>
+      <div class="verse-ps">راویخ به نه شي په شپیلۍ ده اسرافيل حزینه<br>ځما ده قام بچي په داسي خوب اوده پراته دي</div>
+      <div class="verse-note">Even Israfil's trumpet could not wake them, O Hazin — my nation's children are sleeping so deep a sleep.</div>
     </blockquote>
   </div>
 </section>
 
-<section>
+<section id="social">
   <div class="wrap">
     <div class="kicker">Find Him Online</div>
     <h2>Social profiles</h2>
     <div class="links">
       <div class="link-row">
         <span class="link-name">Instagram</span>
-        <a href="https://instagram.com/حAمZa  KHuرShID" target="_blank" rel="noopener">@hamzakhurshid ↗</a>
+        <a href="https://www.instagram.com/hazin3265?igsi=aG9oM2Jpd3lubXQx" target="_blank" rel="noopener">@hazin3265 ↗</a>
       </div>
       <div class="link-row">
         <span class="link-name">TikTok</span>
-        <a href="https://www.tiktok.com/@hamzahazinswati?_r=1&_t=ZS-99MLBG8BTsb " target="_blank" rel="noopener">@hamzakhurshid ↗</a>
+        <a href="https://www.tiktok.com/@hamzahazinswati?_r=1&_t=ZS-99MeCuQQ19J" target="_blank" rel="noopener">@hamzahazinswati ↗</a>
       </div>
     </div>
   </div>
