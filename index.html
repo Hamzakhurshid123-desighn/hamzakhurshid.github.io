@@ -43,14 +43,50 @@
   }
   a{color:var(--gold-bright);}
 
+  nav{
+    margin-top:32px;
+    padding:14px 20px;
+    background:rgba(239,230,210,0.05);
+    border:1px solid var(--line);
+    border-radius:6px;
+    display:flex;
+    justify-content:center;
+    gap:22px;
+    flex-wrap:wrap;
+  }
+  nav a{
+    color:var(--sand-dim);
+    text-decoration:none;
+    font-size:14px;
+  }
+  nav a:hover{color:var(--gold-bright);}
+
   /* Hero */
-  .hero{
+  .cover{
     position:relative;
-    padding:90px 0 90px;
+    height:220px;
     overflow:hidden;
     background:
-      radial-gradient(ellipse at 50% -10%, rgba(199,154,60,0.18), transparent 55%),
-      var(--night-deep);
+      linear-gradient(180deg, rgba(15,25,23,0.35) 0%, rgba(15,25,23,0.85) 100%),
+      url('images (3).jpeg');
+    background-size:cover;
+    background-position:center;
+  }
+  .cover .cover-ridges{
+    position:absolute;
+    left:0; right:0; bottom:0;
+    width:100%;
+    display:block;
+  }
+  .hero{
+    position:relative;
+    padding:0 0 90px;
+    overflow:hidden;
+    background:var(--night-deep);
+  }
+  .hero .avatar-wrap{
+    margin-top:-90px;
+    margin-bottom:20px;
   }
   .ridges{
     position:absolute;
@@ -74,11 +110,6 @@
     font-size:19px;
     color:var(--sand-dim);
     max-width:46ch;
-  }
-  .hero .place{
-    margin-top:10px;
-    font-size:15px;
-    color:var(--sand-dim);
   }
 
   /* Sections */
@@ -175,43 +206,64 @@
   @media (max-width:600px){
     .hero{padding:70px 0 60px;}
     section{padding:48px 0;}
-    nav{padding:14px 20px !important;}
-    nav div{gap:14px !important;}
-    nav a{font-size:13px !important;}
+    nav{gap:14px;padding:12px 16px;}
+    nav a{font-size:13px;}
   }
 </style>
 </head>
 <body>
 
-<nav style="position:sticky;top:0;z-index:10;background:rgba(15,25,23,0.95);backdrop-filter:blur(6px);padding:16px 28px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(239,230,210,0.16);">
-  <span style="font-family:'Zilla Slab',serif;color:#EFE6D2;font-size:17px;">Hamza Khurshid</span>
-  <div style="display:flex;gap:20px;">
-    <a href="#education" style="color:#C9BFA4;text-decoration:none;font-size:14px;">Education</a>
-    <a href="#poetry" style="color:#C9BFA4;text-decoration:none;font-size:14px;">Poetry</a>
-    <a href="#social" style="color:#C9BFA4;text-decoration:none;font-size:14px;">Social</a>
-  </div>
-</nav>
-
-<div class="hero">
-  <div class="wrap">
-    <img src="Snapchat-923338820.jpg" alt="Hamza Khurshid" style="width:180px;height:180px;border-radius:50%;object-fit:cover;border:2px solid #C79A3C;margin-bottom:24px;">
-    <div class="eyebrow">Swat · Barikot · Pakistan</div>
-    <h1>Hamza Khurshid</h1>
-    <div class="role">Computer Science student working in data analysis and e-commerce — and a Pashto poet writing about life, longing, and home.</div>
-  </div>
-  <svg class="ridges" viewBox="0 0 1440 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+<div class="cover" id="home">
+  <svg class="cover-ridges" viewBox="0 0 1440 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
     <polygon points="0,140 0,90 180,40 340,80 520,20 700,70 900,30 1080,85 1260,45 1440,90 1440,140" fill="#16231F" opacity="0.9"/>
     <polygon points="0,140 0,110 220,70 420,105 640,60 860,100 1080,65 1260,105 1440,80 1440,140" fill="#1D2E28"/>
   </svg>
 </div>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="avatar-wrap">
+      <img src="Snapchat-923338820.jpg" alt="Hamza Khurshid" style="width:180px;height:180px;border-radius:50%;object-fit:cover;border:4px solid #EFE6D2;box-shadow:0 6px 20px rgba(0,0,0,0.45);">
+    </div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#poetry">Poetry</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="eyebrow" style="margin-top:32px;">Swat · Barikot · Pakistan</div>
+    <h1>Hamza Khurshid</h1>
+    <div class="role">Computer Science student working in data analysis and e-commerce — and a Pashto poet writing about life, longing, and home.</div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <div class="kicker">About</div>
+    <h2>Bridging code and culture.</h2>
+    <p>Hamza Khurshid is a Computer Science student from Swat, Barikot, Pakistan, currently pursuing his BS degree while building practical experience in data analysis and e-commerce. His freelance background covers Microsoft Excel, digital content, and general computer work, giving him a hands-on grasp of how data and technology serve real businesses. Outside the classroom and client work, Hamza is a Pashto poet and writer, sharing verses and literary thoughts that reflect his connection to the Pashto language and Pashtoon culture. He writes about life, longing, nature, dreams, and home — carrying the emotional weight of his roots into every line he composes.</p>
+  </div>
+</section>
 
 <section id="education">
   <div class="wrap">
     <div class="kicker">Education &amp; Expertise</div>
     <h2>Studying computer science, working with data.</h2>
     <p>Hamza is currently pursuing a BS in Computer Science. His practical experience spans data analysis and e-commerce, built through freelance work with Microsoft Excel, digital content, and general computer skills.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="kicker">Skills</div>
+    <h2>What he works with.</h2>
     <div class="tag-row">
       <span class="tag">BS Computer Science</span>
+      <span class="tag">Programming</span>
       <span class="tag">Data Analysis</span>
       <span class="tag">E-commerce</span>
       <span class="tag">Microsoft Excel</span>
@@ -224,7 +276,7 @@
   <div class="wrap">
     <div class="kicker">Pashto Poetry &amp; Writing</div>
     <h2>Writing in Pashto, close to home.</h2>
-    <p>Alongside his technical work, Hamza writes and shares Pashto poetry and literary thoughts. His writing turns to life, emotion, nature, culture, and dreams — carrying his connection to the Pashto language and Pashtoon culture.</p>
+    <p>Alongside his technical work, Hamza writes and shares Pashto poetry and literary thoughts.</p>
     <blockquote>
       <div class="verse-ps">راویخ به نه شي په شپیلۍ ده اسرافيل حزینه<br>ځما ده قام بچي په داسي خوب اوده پراته دي</div>
       <div class="verse-note">Even Israfil's trumpet could not wake them, O Hazin — my nation's children are sleeping so deep a sleep.</div>
@@ -232,11 +284,19 @@
   </div>
 </section>
 
-<section id="social">
+<section id="contact">
   <div class="wrap">
-    <div class="kicker">Find Him Online</div>
-    <h2>Social profiles</h2>
+    <div class="kicker">Get In Touch</div>
+    <h2>Contact &amp; social profiles</h2>
     <div class="links">
+      <div class="link-row">
+        <span class="link-name">Phone</span>
+        <a href="tel:03444313757">0344 4313757</a>
+      </div>
+      <div class="link-row">
+        <span class="link-name">Email</span>
+        <a href="mailto:hk5956854@gmail.com">hk5956854@gmail.com</a>
+      </div>
       <div class="link-row">
         <span class="link-name">Instagram</span>
         <a href="https://www.instagram.com/hazin3265?igsi=aG9oM2Jpd3lubXQx" target="_blank" rel="noopener">@hazin3265 ↗</a>
