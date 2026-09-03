@@ -44,15 +44,17 @@
   a{color:var(--gold-bright);}
 
   nav{
-    margin-top:32px;
-    padding:14px 20px;
-    background:rgba(239,230,210,0.05);
-    border:1px solid var(--line);
-    border-radius:6px;
+    position:sticky;
+    top:0;
+    z-index:20;
+    background:rgba(15,25,23,0.97);
+    backdrop-filter:blur(6px);
+    padding:16px 28px;
     display:flex;
     justify-content:center;
-    gap:22px;
+    gap:26px;
     flex-wrap:wrap;
+    border-bottom:1px solid var(--line);
   }
   nav a{
     color:var(--sand-dim);
@@ -64,17 +66,9 @@
   /* Hero */
   .cover{
     position:relative;
-    height:220px;
+    height:180px;
     overflow:hidden;
-    background:
-      radial-gradient(ellipse at 30% 20%, rgba(199,154,60,0.35), transparent 60%),
-      linear-gradient(135deg, #1D2E28 0%, #0F1917 60%, #16231F 100%);
-  }
-  .cover .cover-ridges{
-    position:absolute;
-    left:0; right:0; bottom:0;
-    width:100%;
-    display:block;
+    background:linear-gradient(180deg, #1D2E28 0%, #0F1917 100%);
   }
   .hero{
     position:relative;
@@ -82,7 +76,7 @@
     background:var(--night-deep);
   }
   .hero .avatar-wrap{
-    margin-top:-90px;
+    margin-top:-70px;
     margin-bottom:20px;
     position:relative;
     z-index:5;
@@ -212,12 +206,16 @@
 </head>
 <body>
 
-<div class="cover" id="home">
-  <svg class="cover-ridges" viewBox="0 0 1440 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-    <polygon points="0,140 0,90 180,40 340,80 520,20 700,70 900,30 1080,85 1260,45 1440,90 1440,140" fill="#16231F" opacity="0.9"/>
-    <polygon points="0,140 0,110 220,70 420,105 640,60 860,100 1080,65 1260,105 1440,80 1440,140" fill="#1D2E28"/>
-  </svg>
-</div>
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+  <a href="#poetry">Poetry</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="cover" id="home"></div>
 
 <div class="hero">
   <div class="wrap">
@@ -225,17 +223,8 @@
       <img src="Snapchat-923338820.jpg" alt="Hamza Khurshid" style="width:180px;height:180px;border-radius:50%;object-fit:cover;border:4px solid #EFE6D2;box-shadow:0 6px 20px rgba(0,0,0,0.45);">
     </div>
 
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#poetry">Poetry</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-    <div class="eyebrow" style="margin-top:32px;">Swat · Barikot · Pakistan</div>
-    <h1>Hamza Khurshid</h1>
+    <h1 style="margin-top:32px;">Hamza Khurshid</h1>
+    <div class="eyebrow" style="margin-top:10px;margin-bottom:0;">Swat · Barikot · Pakistan</div>
     <div class="role">Computer Science student working in data analysis and e-commerce — and a Pashto poet writing about life, longing, and home.</div>
   </div>
 </div>
@@ -313,4 +302,4 @@
 </footer>
 
 </body>
-</html>   
+</html>
